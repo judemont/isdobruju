@@ -8,3 +8,7 @@ label {
 input {
   margin: 0.4rem;
 }
+
+.game div {
+  display: none;
+}
