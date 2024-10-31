@@ -9,10 +9,29 @@
 </head>
 <body>
     <div class="game">
-        <div id="q1">
-            <h1>Salut bro, tu tapelle comment bro ?</h1>
+        <div class="q" id="q1">
+            <h1>Salut bro, tu t'appelles comment ?</h1>
             <input type="text" id="usernameInput" placeholder="Ton pseudo">
-            <button onclick="sendName()" class="sendButton">Suivant</button>
+            <button onclick="q1()" class="sendButton">Suivant</button>
+        </div>
+        <div class="q" id="q2" style="display: none;">
+            <fieldset>
+                <legend>Quelle est la capitale du Bangladesh ?</legend>
+                <div>
+                    <input type='radio' id='option1' value='lausanne' name="capital" />
+                    <label for='option1'>Lausanne</label>    
+                </div>
+                <div>
+                    <input type='radio' id='option2' value='fribourg' name="capital"/>
+                    <label for='option2'>Fribourg</label>
+                </div>
+                <div>
+                    <input type='radio' id='option3' value='new_delhi' name="capital" checked />
+                    <label for='option3'>New Delhi</label>
+                </div>
+              
+            </fieldset>
+            <button onclick="q2()">Suivant</button>
         </div>
     </div>
 </body>

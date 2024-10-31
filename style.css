@@ -9,6 +9,6 @@ input {
   margin: 0.4rem;
 }
 
-.game div {
+.game .q {
   display: none;
 }
